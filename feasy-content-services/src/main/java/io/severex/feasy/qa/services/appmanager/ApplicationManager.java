@@ -13,6 +13,8 @@ public class ApplicationManager {
     public WebDriver driver;
     private StringBuffer verificationErrors = new StringBuffer();
     private String browser;
+    private String env;
+
 
     public ApplicationManager(String browser) {
         this.browser = browser;
@@ -33,7 +35,11 @@ public class ApplicationManager {
         driver.manage().timeouts().pageLoadTimeout(100, SECONDS);
         driver.manage().timeouts().setScriptTimeout(100, SECONDS);
 
-        driver.get("https://grinfer.com/");
+        if (env != null) {
+            driver.get("https://" + env + "grinfer.com/");
+        } else {
+            driver.get("https://grinfer.com/");
+        }
 
     }
 

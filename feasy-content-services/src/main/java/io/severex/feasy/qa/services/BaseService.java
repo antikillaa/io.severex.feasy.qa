@@ -17,6 +17,5 @@ public class BaseService {
     @AfterClass
     public void tearDown() {
         app.stop();
-
     }
 }
