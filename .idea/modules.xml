@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/feasy-qa-model/feasy-qa-model.iml" filepath="$PROJECT_DIR$/feasy-qa-model/feasy-qa-model.iml" />
       <module fileurl="file://$PROJECT_DIR$/qa.iml" filepath="$PROJECT_DIR$/qa.iml" />
+      <module fileurl="file://$PROJECT_DIR$/feasy-content-services/services.iml" filepath="$PROJECT_DIR$/feasy-content-services/services.iml" />
     </modules>
   </component>
 </project>

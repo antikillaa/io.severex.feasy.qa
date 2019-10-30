@@ -7,12 +7,14 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="feasy-qa-model" />
+        <module name="services" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="feasy-content-services" target="1.8" />
       <module name="feasy-qa-model" target="1.8" />
       <module name="qa" target="1.8" />
+      <module name="services" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
