@@ -21,13 +21,13 @@ public class ApplicationManager {
     }
 
 
-    public void init() {
+    public void init(String browser) {
         if (browser.equals(BrowserType.CHROME)) {
-            driverPath = FilenameUtils.separatorsToSystem("C:\\Users\\potato\\IdeaProjects\\feasy\\io.severex.feasy.qa\\src\\test\\resources\\webdriver\\win\\chromedriver.exe");
+            driverPath = FilenameUtils.separatorsToSystem("src/test/resources/webdriver/linux/chromedriver");
             System.setProperty("webdriver.chrome.driver", ApplicationManager.driverPath);
             driver = new ChromeDriver();
         } else if (browser.equals(BrowserType.FIREFOX)) {
-            driverPath = FilenameUtils.separatorsToSystem("webdriver//geckodriver");
+            driverPath = FilenameUtils.separatorsToSystem("src/test/resources/webdriver/linux//geckodriver");
             System.setProperty("webdriver.gecko.driver", ApplicationManager.driverPath);
             driver = new FirefoxDriver();
         }
