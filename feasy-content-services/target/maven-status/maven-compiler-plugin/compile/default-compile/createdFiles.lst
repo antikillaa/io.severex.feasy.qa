@@ -1,0 +1,4 @@
+io/severex/feasy/qa/services/config/TestrailConfig.class
+io/severex/feasy/qa/services/service/TestrailService.class
+io/severex/feasy/qa/services/service/BaseService.class
+io/severex/feasy/qa/services/appmanager/ApplicationManager.class
